@@ -1,0 +1,80 @@
+class FifteenthAssignment {
+public static void main(String[] args) {
+    
+A a=new A();
+a.test();
+
+    
+    }
+
+}
+
+
+class C
+{
+    int i;
+    int j;
+    int k;
+    int sum;
+     
+    C()
+    {
+        i=90;
+        j=80;
+        k=70;
+        
+        sum=i+j+k;
+    }
+    void test()
+    {
+    
+        System.out.println("the sum is " +sum);
+    }
+    
+}
+class B extends C 
+{
+        int i;
+        int j;
+        int k;
+        int sum;
+         
+        B()
+        {
+            i=70;
+            j=90;
+            k=60;
+            sum=i+j+k;
+        }
+        void test()
+        {
+            super.test();
+            System.out.println("the sum is " +sum);
+        }
+        
+    }
+class A extends B 
+{
+        int i;
+        int j;
+        int k;
+        int sum;
+         
+        A()
+        {
+            i=70;
+            j=50;
+            k=60;
+            sum=i+j+k;
+        }
+        void test()
+        {
+        super.test();
+            System.out.println("the sum is " +sum);/* the correct answer is option F. IT IS NOT POSSIBLE TO INVOKE TEST() METHOD DEFINED IN  C FROM A METHOD IN A*/
+        }
+        
+    }
+
+
+        
+    
